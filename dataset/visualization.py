@@ -24,7 +24,7 @@ def disp_img_to_rgb_img(disp_array: np.ndarray):
 def show_image(image):
     cv2.namedWindow('viz', cv2.WND_PROP_FULLSCREEN)
     cv2.imshow('viz', image)
-    cv2.waitKey(0)
+    cv2.waitKey(100)
 
 def get_disp_overlay(image_1c, disp_rgb_image, height, width):
     image = np.repeat(image_1c[..., np.newaxis], 3, axis=2)
